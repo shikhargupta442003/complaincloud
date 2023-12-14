@@ -5,6 +5,7 @@
     <string name="enter_phone_number">Enter Phone Number</string>
     <string name="title_activity_services">services</string>
     <string name="select">Select Service</string>
+    <string name="select_service">Select Service</string>
 
 
 </resources>
