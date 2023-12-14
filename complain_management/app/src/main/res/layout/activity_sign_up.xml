@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/signup_screen"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    tools:ignore="ExtraText">
 
 
     <com.google.android.material.textfield.TextInputLayout
