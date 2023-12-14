@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">complain_management</string>
+    <string name="app_name">LoginAndSignUp</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_apartment_name">Enter Apartment Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="title_activity_services">services</string>
+    <string name="select">Select Service</string>
+
+
 </resources>
