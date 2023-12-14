@@ -3,14 +3,17 @@ package com.example.complain_management
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.example.complain_management.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivitySignUpBinding
     private lateinit var firebaseAuth: FirebaseAuth
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)
+    {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -46,5 +49,17 @@ class SignUpActivity : AppCompatActivity() {
 
             }
         }
+
+        val admbutton = findViewById<Button>(R.id.admbutton)
+        admbutton.setOnClickListener {
+            val Intent22 = Intent(this, Admin::class.java)
+            startActivity(Intent22)
+
+        }
+
+
+
+
+
     }
 }
