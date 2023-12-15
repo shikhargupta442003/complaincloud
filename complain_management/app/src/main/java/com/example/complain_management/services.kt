@@ -1,9 +1,11 @@
 package com.example.complain_management
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
+import android.widget.Button
 
 class services : AppCompatActivity() {
 
@@ -11,7 +13,7 @@ class services : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_services)
 
-        val items = arrayOf("One","Two","Three","Four","Five")
+        val items = arrayOf("One", "Two", "Three", "Four", "Five")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
 
@@ -33,6 +35,10 @@ class services : AppCompatActivity() {
         val autoCompleteTextView5 = findViewById<AutoCompleteTextView>(R.id.auto_complete_txt5)
         autoCompleteTextView5.setAdapter(adapter)
 
-
+        val ssi = findViewById<Button>(R.id.ssi)
+        ssi.setOnClickListener {
+            val Intent0 = Intent(this, home_page::class.java)
+            startActivity(Intent0)
+        }
     }
 }

@@ -6,6 +6,11 @@
     <string name="title_activity_services">services</string>
     <string name="select">Select Service</string>
     <string name="select_service">Select Service</string>
+    <string name="title_activity_home_page">home_page</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="sign_in_and_move_to_homepage">SIGN IN AND MOVE TO HOMEPAGE</string>
 
 
 </resources>
