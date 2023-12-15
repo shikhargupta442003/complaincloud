@@ -31,6 +31,10 @@ class SignUpActivity : AppCompatActivity() {
 
 
         val signInText:TextView=findViewById(R.id.textView)
+        binding.admbutton.setOnClickListener {
+            val intent=Intent(this,Admin::class.java)
+            startActivity(intent)
+        }
 
         signInText.setOnClickListener {
             val intent = Intent(this, SignInActivity::class.java)
