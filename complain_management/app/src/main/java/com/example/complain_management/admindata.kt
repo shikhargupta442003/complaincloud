@@ -6,4 +6,5 @@ data class admindata(
     var number:String?= null,
     var organizationname:String?= null,
     var uid:String?=null,
+    var admin_services: List<String?>? = null,
 )

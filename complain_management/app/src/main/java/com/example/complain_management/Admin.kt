@@ -67,11 +67,12 @@ class Admin : AppCompatActivity() {
                 auth.createUserWithEmailAndPassword(email,Password).addOnCompleteListener{
                     if(it.isSuccessful){
                         val databaseRef=database.reference.child("admin").child(auth.currentUser!!.uid)
-                        val admin:admindata=admindata(email,name,number,organizationname,auth.currentUser!!.uid)
+                        val admin:admindata=admindata(email = email, name = name, number = number, organizationname = organizationname, uid = auth.currentUser!!.uid)
 
                         databaseRef.setValue(admin).addOnCompleteListener {
                             if(it.isSuccessful){
                                 val intent= Intent(this,services::class.java)
+                                intent.putExtra("userId", auth.currentUser!!.uid)
                                 startActivity(intent)
                             }else{
                                 binding.adminconfirmPass.error=it.exception.toString()
