@@ -70,7 +70,7 @@ class Admin : AppCompatActivity() {
                         val admin:admindata=admindata(email,name,number,organizationname,auth.currentUser!!.uid)
 
                         databaseRef.setValue(admin).addOnCompleteListener {
-                            if(it.isSuccessful){
+                            if(it.isSuccessful) {
                                 val intent= Intent(this,services::class.java)
                                 startActivity(intent)
                             }else{
