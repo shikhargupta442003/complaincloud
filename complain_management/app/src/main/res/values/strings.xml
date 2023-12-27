@@ -11,19 +11,6 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="sign_in_and_move_to_homepage">SIGN IN AND MOVE TO HOMEPAGE</string>
-    <string name="admin_conso">Admin Console</string>
 
-    <string name="ek_img_content">ExportKit Image</string>
-    <string name="admin_console_string">Admin Console</string>
-    <string name="view_pending_actions_string">View Pending Actions</string>
-    <string name="ravi_string">Ravi</string>
-    <string name="mala_string">Mala</string>
-    <string name="bharat_string">Bharat</string>
-    <string name="view_all_string">View All</string>
-    <string name="pre_approve_string">Pre-Approve</string>
-    <string name="helpdesk_string">Helpdesk</string>
-    <string name="amenities_string">Amenities</string>
-    <string name="directory_string">Directory</string>
-    <string name="payments_string">Payments</string>
 
 </resources>

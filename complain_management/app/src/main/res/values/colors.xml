@@ -9,23 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellow">#FFC801</color>
 
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-
-
-    <color name="_bg__homepage_ek2_color">#FFFFFF</color>
-    <color name="_bg__admin_activity_ek1_color">#000000</color>
-    <color name="ellipse_1_color">#E95858</color>
-    <color name="ellipse_3_color">#D9D9D9</color>
-    <color name="ellipse_7_color">#FF985E</color>
-    <color name="ellipse_8_color">#F686BC</color>
-    <color name="rectangle_4_color">#B7F3B6</color>
-    <color name="rectangle_5_color">#FCA8F9</color>
-    <color name="rectangle_7_color">#A8CBFF</color>
-    <color name="rectangle_8_color">#FFACAC</color>
-    <color name="rectangle_9_color">#FBFCC6</color>
-
 
 
 </resources>
