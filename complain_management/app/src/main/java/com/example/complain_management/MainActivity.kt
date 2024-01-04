@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.buttonSignin.setOnClickListener{
-            val intent= Intent(this,SignInActivity::class.java)
+            val intent= Intent(this,home_page_activity::class.java)
             startActivity(intent)
         }
     }
