@@ -11,6 +11,14 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="sign_in_and_move_to_homepage">SIGN IN AND MOVE TO HOMEPAGE</string>
-
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="billing_and_more_string">Billing  and More</string>
+    <string name="complaint_history_string">Complaint History</string>
+    <string name="edit_staff_string">Edit Staff</string>
+    <string name="edit_organization_string">Edit Organization</string>
+    <string name="edit_user_string">Edit User</string>
+    <string name="edit_service_string">Edit Service</string>
+    <string name="welcome_admin____string">WELCOME ADMIN !!</string>
+    <string name="company_name_string">COMPANY NAME </string>
 
 </resources>
