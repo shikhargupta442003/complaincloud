@@ -20,20 +20,20 @@
     <string name="edit_service_string">Edit Service</string>
     <string name="welcome_admin____string">WELCOME ADMIN !!</string>
     <string name="company_name_string">COMPANY NAME </string>
-    <string name="vector_ek5" />
-    <string name="image_2">\n</string>
-    <string name="vector_ek1" />
-    <string name="vector_ek2" />
-    <string name="stroke_1" />
-    <string name="vector_ek3">\n</string>
-    <string name="vector_ek4" />
-    <string name="vector_ek7" />
-    <string name="vector_ek8" />
-    <string name="vector_ek6" />
-    <string name="vector_ek9" />
-    <string name="vector_ek10" />
-    <string name="vector_ek11" />
-    <string name="vector" />
-    <string name="vector_ek12" />
+    <string name="vector_ek1">vector_ek1</string>
+    <string name="image_2">image_2</string>
+    <string name="stroke_1">stroke_1</string>
+    <string name="vector_ek2">vector_ek2</string>
+    <string name="vector_ek3">vector_ek3</string>
+    <string name="vector_ek4">vector_ek4</string>
+    <string name="vector_ek5">vector_ek5</string>
+    <string name="vector_ek10">vector_ek10</string>
+    <string name="vector_ek8">vector_ek8</string>
+    <string name="vector_ek6">vector_ek6</string>
+    <string name="vector_ek9">vector_ek9</string>
+    <string name="vector_ek12">vector_ek12</string>
+    <string name="vector_ek11">vector_ek11</string>
+    <string name="vector">vector</string>
+    <string name="vector_ek7">vector_ek7</string>
 
 </resources>
