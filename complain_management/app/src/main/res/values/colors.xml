@@ -19,5 +19,9 @@
     <color name="rectangle_11_color">#A1EEBD</color>
     <color name="rectangle_8_ek2_color">#7BD3EA</color>
 
+    <color name="_bg__edit_user_ek2_color">#F2FCFF</color>
+    <color name="edit_user_ek3_color">#000000</color>
+    <color name="edit_user_add_user_box_color">#A3E1F1</color>
+    <color name="edit_user_existing_user_box_color">#A9EFC2</color>
 
 </resources>

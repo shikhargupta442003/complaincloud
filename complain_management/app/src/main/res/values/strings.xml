@@ -35,5 +35,8 @@
     <string name="vector_ek11">vector_ek11</string>
     <string name="vector">vector</string>
     <string name="vector_ek7">vector_ek7</string>
+    <string name="edit_user_ek3_string">Edit User</string>
+    <string name="add_user_string">ADD USER</string>
+    <string name="existing_user_string">EXISTING USER</string>
 
 </resources>
