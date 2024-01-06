@@ -30,15 +30,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="4dp"
-                android:background="@drawable/_bg__edit_user_ek2_shape"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/_bg__edit_user_ek2_shape"/>
 
             <ImageButton
                 android:id="@+id/edit_user_back_icon"
-                android:layout_width="46dp"
-                android:layout_height="46dp"
+                android:layout_width="58dp"
+                android:layout_height="59dp"
                 android:contentDescription="edit_user_back_icon"
                 android:src="@drawable/edit_user_back_icon"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -141,6 +141,7 @@
                 app:layout_constraintBottom_toTopOf="@+id/edit_user_existing_user_box"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.496"
+                android:contentDescription="Description of the button"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
@@ -176,6 +177,7 @@
                 android:id="@+id/edit_user_existing_user_box"
                 android:layout_width="268dp"
                 android:layout_height="70dp"
+                android:contentDescription="Description of the button"
                 android:background="@drawable/edit_user_existing_user_box_shape"
                 app:layout_constraintBottom_toBottomOf="@+id/_bg__edit_user_ek2"
                 app:layout_constraintEnd_toEndOf="parent"

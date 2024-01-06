@@ -24,4 +24,15 @@
     <color name="edit_user_add_user_box_color">#A3E1F1</color>
     <color name="edit_user_existing_user_box_color">#A9EFC2</color>
 
+
+    <color name="_bg__edit_staff_ek2_color">#F2FCFF</color>
+    <color name="edit_staff_ek3_color">#000000</color>
+    <color name="edit_staff_add_staff_box_color">#F9FAD6</color>
+    <color name="edit_staff_exisiting_staff_box_color">#F6D7D7</color>
+
+    <color name="_bg__edit_services_ek2_color">#F2FCFF</color>
+    <color name="edit_services_ek3_color">#000000</color>
+    <color name="edit_services_add_services_box_color">#A9EFC2</color>
+    <color name="edit_services_existing_service_box_color">#F9FAD6</color>
+
 </resources>

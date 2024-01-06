@@ -39,4 +39,13 @@
     <string name="add_user_string">ADD USER</string>
     <string name="existing_user_string">EXISTING USER</string>
 
+
+    <string name="edit_staff_ek3_string">Edit Staff</string>
+    <string name="add_staff_string">ADD STAFF</string>
+    <string name="existing_staff_string">EXISTING STAFF</string>
+
+    <string name="edit_services_ek3_string">Edit Services</string>
+    <string name="add_service_string">ADD SERVICE</string>
+    <string name="existing_service_string">EXISTING SERVICE</string>
+
 </resources>
