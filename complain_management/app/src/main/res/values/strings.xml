@@ -48,4 +48,21 @@
     <string name="add_service_string">ADD SERVICE</string>
     <string name="existing_service_string">EXISTING SERVICE</string>
 
+
+    <string name="add_user_text_string">ADD USER</string>
+    <string name="enter_e_mail_id_string">Enter E-mail Id</string>
+    <string name="select_address_proof_string">Select Address Proof</string>
+    <string name="enter_address_proof_string">Enter Address Proof</string>
+    <string name="enter_age_string">Enter Age</string>
+    <string name="enter_name_string">Enter Name</string>
+    <string name="enter_building_no__string">Enter Building No.</string>
+    <string name="enter_building_name_string">Enter Building Name</string>
+    <string name="enter_flat_no__string">Enter Flat No.</string>
+    <string name="enter_mobile_number_string">Enter Mobile Number</string>
+    <string name="new_user_string">NEW USER</string>
+    <string name="submit_string">SUBMIT</string>
+
+
+
+
 </resources>

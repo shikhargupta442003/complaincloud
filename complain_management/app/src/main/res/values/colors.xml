@@ -35,4 +35,11 @@
     <color name="edit_services_add_services_box_color">#A9EFC2</color>
     <color name="edit_services_existing_service_box_color">#F9FAD6</color>
 
+
+    <color name="_bg__add_user_ek2_color">#F2FCFF</color>
+    <color name="add_user_top_bar_box_color">#A9EFC2</color>
+    <color name="add_user_text_color">#000000</color>
+    <color name="add_user_enter_name_box_color">#BDF1FF</color>
+    <color name="add_user_new_user_button_color">#F9FAD6</color>
+
 </resources>

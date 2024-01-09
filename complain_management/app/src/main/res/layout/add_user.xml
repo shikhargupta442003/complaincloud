@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_user_activity">
+
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/page_add_user_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/_bg__add_user_ek2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/_bg__add_user_ek2_shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/edit_user_back_icon"
+                android:layout_width="58dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:contentDescription="edit_user_back_icon"
+                android:src="@drawable/edit_user_back_icon"
+                app:layout_constraintBottom_toTopOf="@+id/add_user_top_bar_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.272" />
+
+            <View
+                android:id="@+id/add_user_top_bar_box"
+                android:layout_width="415dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/add_user_top_bar_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/add_user_text"
+                android:layout_width="138dp"
+                android:layout_height="43dp"
+                android:text="@string/add_user_text_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_top_bar_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_top_bar_box"
+                app:layout_constraintStart_toStartOf="@+id/add_user_top_bar_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_top_bar_box" />
+
+            <View
+                android:id="@+id/add_user_enter_name_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_name_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <View
+                android:id="@+id/add_user_select_address_proof_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="72dp"
+                android:background="@drawable/add_user_select_address_proof_box_shape"
+                app:layout_constraintBottom_toBottomOf="@+id/_bg__add_user_ek2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <View
+                android:id="@+id/add_user_enter_address_poof_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_address_poof_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="492dp" />
+
+            <View
+                android:id="@+id/add_user_enter_email_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_email_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="333dp" />
+
+            <View
+                android:id="@+id/add_user_enter_mobile_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_mobile_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="276dp" />
+
+            <View
+                android:id="@+id/add_user_enter_building_name_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_building_name_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="220dp" />
+
+            <View
+                android:id="@+id/add_user_enter_building_number_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_building_number_box_shape"
+                app:layout_constraintBottom_toTopOf="@+id/add_user_enter_age_box"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_user_text" />
+
+            <View
+                android:id="@+id/add_user_enter_flat_number_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_flat_number_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="434dp" />
+
+            <View
+                android:id="@+id/add_user_enter_age_box"
+                android:layout_width="321dp"
+                android:layout_height="41dp"
+                android:background="@drawable/add_user_enter_age_box_shape"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="169dp" />
+
+            <TextView
+                android:id="@+id/enter_e_mail_id"
+                android:layout_width="257dp"
+                android:layout_height="22dp"
+                android:text="@string/enter_e_mail_id_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_building_name_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_building_name_box"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_building_name_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_building_name_box"
+                app:layout_constraintVertical_bias="0.526" />
+
+            <TextView
+                android:id="@+id/enter_building_name"
+                android:layout_width="200.6dp"
+                android:layout_height="30.6dp"
+                android:text="@string/enter_building_name_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/enter_address_proof"
+                android:layout_width="200.6dp"
+                android:layout_height="30.6dp"
+                android:text="@string/enter_address_proof_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_email_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_email_box"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_email_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_email_box"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/enter_age"
+                android:layout_width="77dp"
+                android:layout_height="25dp"
+                android:text="@string/enter_age_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_age_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_age_box"
+                app:layout_constraintHorizontal_bias="0.036"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_age_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_age_box"
+                app:layout_constraintVertical_bias="0.562" />
+
+            <TextView
+                android:id="@+id/enter_flat_no_"
+                android:layout_width="200.6dp"
+                android:layout_height="30.6dp"
+                android:text="@string/enter_flat_no__string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_flat_number_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_flat_number_box"
+                app:layout_constraintHorizontal_bias="0.083"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_flat_number_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_flat_number_box"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/enter_mobile_number"
+                android:layout_width="200.6dp"
+                android:layout_height="30.6dp"
+                android:text="@string/enter_mobile_number_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_name_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_name_box"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_name_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_name_box"
+                app:layout_constraintVertical_bias="1.0" />
+
+
+            <TextView
+                android:id="@+id/enter_building_no_"
+                android:layout_width="200.6dp"
+                android:layout_height="30.6dp"
+                android:text="@string/enter_building_no__string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_address_poof_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_address_poof_box"
+                app:layout_constraintHorizontal_bias="0.075"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_address_poof_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_address_poof_box"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/select_address_proof"
+                android:layout_width="273dp"
+                android:layout_height="24dp"
+                android:text="@string/select_address_proof_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_mobile_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_mobile_box"
+                app:layout_constraintHorizontal_bias="0.208"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_mobile_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_mobile_box"
+                app:layout_constraintVertical_bias="0.47" />
+
+            <TextView
+                android:id="@+id/enter_name"
+                android:layout_width="308dp"
+                android:layout_height="26dp"
+                android:text="@string/enter_name_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_enter_building_number_box"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_enter_building_number_box"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toStartOf="@+id/add_user_enter_building_number_box"
+                app:layout_constraintTop_toTopOf="@+id/add_user_enter_building_number_box"
+                app:layout_constraintVertical_bias="0.533" />
+
+            <ImageButton
+                android:id="@+id/add_user_new_user_button"
+                android:layout_width="146dp"
+                android:layout_height="49dp"
+                android:layout_marginEnd="36dp"
+                android:background="@drawable/add_user_new_user_button_shape"
+                android:contentDescription="Description of the button"
+                app:layout_constraintBottom_toBottomOf="@+id/_bg__add_user_ek2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.82"
+                app:layout_constraintStart_toEndOf="@+id/add_user_submit_button"
+                app:layout_constraintTop_toBottomOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintVertical_bias="0.466" />
+
+            <ImageButton
+                android:id="@+id/add_user_submit_button"
+                android:layout_width="154dp"
+                android:layout_height="52dp"
+                android:background="@drawable/add_user_submit_button_shape"
+                android:contentDescription="Description of the button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.166"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_user_select_address_proof_box"
+                app:layout_constraintVertical_bias="0.466" />
+
+            <TextView
+                android:id="@+id/new_user"
+                android:layout_width="124dp"
+                android:layout_height="35dp"
+                android:text="@string/new_user_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_submit_button"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_submit_button"
+                app:layout_constraintStart_toStartOf="@+id/add_user_submit_button"
+                app:layout_constraintTop_toTopOf="@+id/add_user_submit_button" />
+
+            <TextView
+                android:id="@+id/submit"
+                android:layout_width="92dp"
+                android:layout_height="31dp"
+                android:text="@string/submit_string"
+                android:textColor="@color/add_user_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/add_user_new_user_button"
+                app:layout_constraintEnd_toEndOf="@+id/add_user_new_user_button"
+                app:layout_constraintStart_toStartOf="@+id/add_user_new_user_button"
+                app:layout_constraintTop_toTopOf="@+id/add_user_new_user_button" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
