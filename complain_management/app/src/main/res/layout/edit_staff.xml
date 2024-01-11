@@ -135,8 +135,8 @@
 
             <ImageView
                 android:id="@+id/edit_staff_main"
-                android:layout_width="256dp"
-                android:layout_height="235dp"
+                android:layout_width="254dp"
+                android:layout_height="226dp"
                 android:layout_marginTop="108dp"
                 android:contentDescription="edit_staff_main"
                 android:src="@drawable/edit_staff_main"

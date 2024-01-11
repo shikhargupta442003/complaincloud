@@ -15,14 +15,14 @@ class SignInActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding= ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         firebaseAuth=FirebaseAuth.getInstance()
-        binding.textView.setOnClickListener{
-            val intent= Intent(this,SignUpActivity::class.java)
-            startActivity(intent)
-        }
+
+
+
         binding.button.setOnClickListener {
             val email = binding.emailEt.text.toString()
             val pass = binding.passET.text.toString()
@@ -43,6 +43,10 @@ class SignInActivity : AppCompatActivity() {
 
             }
         }
-    }
 
+        binding.textView.setOnClickListener{
+            val intent= Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
+        }
+    }
 }

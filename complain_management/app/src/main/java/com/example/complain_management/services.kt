@@ -29,7 +29,7 @@ class services : AppCompatActivity() {
         autoCompleteTextView.setAdapter(adapter)
 
         // Check for selection using Text Length before button click
-        binding.ssi.isEnabled = binding.autoCompleteTxt.text.toString().isNotEmpty()
+        binding.ssi1.isEnabled = binding.autoCompleteTxt.text.toString().isNotEmpty()
         Toast.makeText(this, "Services updated successfully {$userId}", Toast.LENGTH_SHORT).show()
         //Update button state based on selection changes
         autoCompleteTextView.addTextChangedListener(object : TextWatcher {
@@ -40,11 +40,11 @@ class services : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                binding.ssi.isEnabled = s.toString().isNotEmpty()
+                binding.ssi1.isEnabled = s.toString().isNotEmpty()
                 selectedService = s.toString() // Update selected service variable
             }
         })
-        binding.ssi.setOnClickListener {
+        binding.ssi1.setOnClickListener {
             if (selectedService?.isNotEmpty() == true) {
 //                Toast.makeText(this, "Error updating services251", Toast.LENGTH_SHORT).show()
                 // Add logic to store the selected service to Firebase based on userId
@@ -70,6 +70,12 @@ class services : AppCompatActivity() {
                         Toast.makeText(this, "Error updating services: ${it.message}", Toast.LENGTH_SHORT).show()
                     }
             }
+        }
+
+
+        binding.ssi2.setOnClickListener{
+            val intent= Intent(this,home_page_activity::class.java)
+            startActivity(intent)
         }
     }
 }
