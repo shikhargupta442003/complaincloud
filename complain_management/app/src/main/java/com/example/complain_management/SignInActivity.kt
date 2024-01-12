@@ -19,6 +19,10 @@ class SignInActivity : AppCompatActivity() {
         binding= ActivitySignInBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.textView.setOnClickListener{
+            val intent= Intent(this,SignUpActivity::class.java)
+            startActivity(intent)
+
         firebaseAuth=FirebaseAuth.getInstance()
 
 
@@ -44,9 +48,7 @@ class SignInActivity : AppCompatActivity() {
             }
         }
 
-        binding.textView.setOnClickListener{
-            val intent= Intent(this,SignUpActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }
