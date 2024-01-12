@@ -65,18 +65,17 @@
 
     <ImageButton
         android:id="@+id/textView"
-        android:layout_width="363dp"
-        android:layout_height="50dp"
+        android:layout_width="379dp"
+        android:layout_height="45dp"
         android:background="@color/user_home_page_view_complaints_box_color"
+        android:contentDescription="Description of the button"
         android:text="Not Registered Yet , Sign Up !"
         android:textColor="@color/black"
-        android:contentDescription="Description of the button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.517" />
 
     <TextView
         android:id="@+id/sign_up_button_text"
