@@ -71,5 +71,11 @@ class services : AppCompatActivity() {
                     }
             }
         }
+        binding.servicesMoveAdminHomepage.setOnClickListener{
+            val intent=Intent(this,home_page_activity::class.java)
+            intent.putExtra("userId",userId)
+            startActivity(intent)
+            finish()
+        }
     }
 }
