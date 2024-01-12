@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.service.autofill.UserData
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import com.example.complain_management.databinding.ActivitySignUpBinding
@@ -30,7 +31,7 @@ class SignUpActivity : AppCompatActivity() {
         database = FirebaseDatabase.getInstance()
 
 
-        val signInText:TextView=findViewById(R.id.textView)
+        val signInText:ImageButton=findViewById(R.id.textView)
         binding.admbutton.setOnClickListener {
             val intent=Intent(this,Admin::class.java)
             startActivity(intent)

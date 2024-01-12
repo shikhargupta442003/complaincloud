@@ -227,12 +227,12 @@
                 android:layout_height="33dp"
                 android:contentDescription="@string/vector_ek7"
                 android:src="@drawable/vector_ek7"
-                app:layout_constraintBottom_toBottomOf="@+id/rectangle_12"
+                app:layout_constraintBottom_toTopOf="@+id/edit_organization"
                 app:layout_constraintEnd_toEndOf="@+id/rectangle_12"
-                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintHorizontal_bias="0.404"
                 app:layout_constraintStart_toStartOf="@+id/rectangle_12"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.921" />
+                app:layout_constraintTop_toTopOf="@+id/rectangle_12"
+                app:layout_constraintVertical_bias="0.476" />
 
             <ImageButton
                 android:id="@+id/rectangle_8_ek2"
@@ -268,12 +268,12 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/vector_ek8"
                 android:src="@drawable/vector_ek8"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/edit_user"
                 app:layout_constraintEnd_toEndOf="@+id/rectangle_8_ek2"
-                app:layout_constraintHorizontal_bias="0.525"
+                app:layout_constraintHorizontal_bias="0.483"
                 app:layout_constraintStart_toStartOf="@+id/rectangle_8_ek2"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.461" />
+                app:layout_constraintTop_toTopOf="@+id/rectangle_8_ek2"
+                app:layout_constraintVertical_bias="1.0" />
 
             <ImageButton
                 android:id="@+id/rectangle_10"
@@ -325,12 +325,12 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/vector_ek6"
                 android:src="@drawable/vector_ek6"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/edit_staff"
                 app:layout_constraintEnd_toEndOf="@+id/rectangle_10"
-                app:layout_constraintHorizontal_bias="0.445"
+                app:layout_constraintHorizontal_bias="0.394"
                 app:layout_constraintStart_toStartOf="@+id/rectangle_10"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.461" />
+                app:layout_constraintTop_toTopOf="@+id/rectangle_10"
+                app:layout_constraintVertical_bias="0.928" />
 
             <ImageView
                 android:id="@+id/vector_ek9"
@@ -339,12 +339,12 @@
 
                 android:contentDescription="@string/vector_ek9"
                 android:src="@drawable/vector_ek9"
-                app:layout_constraintBottom_toBottomOf="@+id/rectangle_11"
+                app:layout_constraintBottom_toTopOf="@+id/edit_service"
                 app:layout_constraintEnd_toEndOf="@+id/rectangle_11"
-                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintHorizontal_bias="0.448"
                 app:layout_constraintStart_toStartOf="@+id/rectangle_11"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.91" />
+                app:layout_constraintTop_toTopOf="@+id/rectangle_11"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/welcome_admin___"

@@ -3,7 +3,6 @@ package com.example.complain_management
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.complain_management.databinding.ActivityServicesBinding
 import com.example.complain_management.databinding.HomePageBinding
 
 class home_page_activity : AppCompatActivity() {
@@ -18,6 +17,15 @@ class home_page_activity : AppCompatActivity() {
             intent.putExtra("userId",userId)
             startActivity(intent)
             finish()
+        }
+        binding.rectangle10.setOnClickListener{
+            val intent= Intent(this,edit_staff_activity::class.java)
+            startActivity(intent)
+        }
+
+        binding.rectangle11.setOnClickListener{
+            val intent= Intent(this,edit_services_activity::class.java)
+            startActivity(intent)
         }
     }
 }

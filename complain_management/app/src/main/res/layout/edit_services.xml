@@ -122,8 +122,8 @@
 
             <ImageView
                 android:id="@+id/edit_services_main"
-                android:layout_width="234dp"
-                android:layout_height="199dp"
+                android:layout_width="224dp"
+                android:layout_height="189dp"
                 android:contentDescription="edit_services_main"
                 android:src="@drawable/edit_services_main"
                 app:layout_constraintBottom_toBottomOf="parent"

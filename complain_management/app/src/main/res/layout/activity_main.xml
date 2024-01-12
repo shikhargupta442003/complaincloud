@@ -4,34 +4,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/admin"
+
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button_signin"
-        android:layout_width="0dp"
+    <RelativeLayout android:id="@+id/content_container"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Sign In"
-        android:textColor="@color/black"
-        android:textStyle="bold"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="384dp"
-        android:layout_height="132dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.462"
-        app:srcCompat="@drawable/home" />
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/page_main_ek1"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/main_page"
+                android:background="@drawable/_bg__main_ek2_shape"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/main_get_started_button"
+                android:layout_width="311dp"
+                android:contentDescription="Description of the button"
+                android:layout_height="57dp"
+                android:background="@drawable/main_get_started_button_shape"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/main_logo"
+                app:layout_constraintVertical_bias="0.501" />
+
+            <TextView
+                android:id="@+id/main_get_started_text"
+                android:layout_width="179.4dp"
+                android:layout_height="37.4dp"
+                android:text="@string/main_get_started_text_string"
+                android:textColor="@color/main_get_started_text_color"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/main_get_started_button"
+                app:layout_constraintEnd_toEndOf="@+id/main_get_started_button"
+                app:layout_constraintHorizontal_bias="0.568"
+                app:layout_constraintStart_toStartOf="@+id/main_get_started_button"
+                app:layout_constraintTop_toTopOf="@+id/main_get_started_button" />
+
+            <ImageView
+                android:id="@+id/main_logo"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:contentDescription="main_logo"
+                android:src="@drawable/main_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.248" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

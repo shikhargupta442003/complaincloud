@@ -62,5 +62,14 @@
     <string name="new_user_string">NEW USER</string>
     <string name="submit_string">SUBMIT</string>
 
+    <string name="main_get_started_text_string">GET STARTED</string>
+
+    <string name="user_home_page_view_complaints_string">View Complaints</string>
+    <string name="user_home_page_society_guidelines_string">Society Guidelines</string>
+    <string name="user_home_page_register_complaint_string">Register Complaint</string>
+    <string name="user_home_page_important_helpline_numbers_string">Important Helpline Numbers</string>
+    <string name="user_home_page_welcome_string">WELCOME USERNAME</string>
+    <string name="user_homr_page_company_name_string">COMPANY NAME </string>
+
 
 </resources>
