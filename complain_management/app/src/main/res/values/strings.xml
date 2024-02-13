@@ -70,6 +70,7 @@
     <string name="user_home_page_important_helpline_numbers_string">Important Helpline Numbers</string>
     <string name="user_home_page_welcome_string">WELCOME USERNAME</string>
     <string name="user_homr_page_company_name_string">COMPANY NAME </string>
+    <string name="title_activity_user_home_page" />
 
 
 </resources>

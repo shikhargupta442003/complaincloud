@@ -34,9 +34,9 @@
             android:name=".Admin"
             android:exported="false" />
         <activity
-            android:name=".home_page"
+            android:name=".user_home_page_activity"
             android:exported="false"
-            android:label="@string/title_activity_home_page" />
+            android:label="@string/title_activity_user_home_page" />
         <activity
             android:name=".services"
             android:exported="false" />
