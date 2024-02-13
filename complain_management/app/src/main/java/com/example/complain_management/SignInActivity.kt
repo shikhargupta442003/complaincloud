@@ -24,7 +24,7 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.textView.setOnClickListener {
-            val intent = Intent(this@SignInActivity, SignUpActivity::class.java)
+            val intent = Intent(this@SignInActivity, Admin::class.java)
             startActivity(intent)
             finish()
         }
@@ -43,7 +43,7 @@ class SignInActivity : AppCompatActivity() {
                             val firebaseUser = FirebaseAuth.getInstance().currentUser
                             val userId = firebaseUser?.uid
                             val adminReference =
-                                FirebaseDatabase.getInstance().getReference("admins")
+                                FirebaseDatabase.getInstance().getReference("admin")
                                     .child(userId.toString())
 
                             adminReference.addListenerForSingleValueEvent(object :
@@ -51,10 +51,23 @@ class SignInActivity : AppCompatActivity() {
                                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                                     if (dataSnapshot.exists()) {
                                         val adminData = dataSnapshot.getValue(admindata::class.java)
-
+                                        Toast.makeText(
+                                            this@SignInActivity,
+                                            "userId.toString()",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
                                         if (adminData != null) {
+                                            runOnUiThread {
+                                                Toast.makeText(this@SignInActivity, "Admin Type: ${adminData.type}", Toast.LENGTH_SHORT).show()
+                                            }
                                             when (adminData.type) {
                                                 "user" -> {
+                                                    // Handle the case where the user is a regular user
+                                                    Toast.makeText(
+                                                        this@SignInActivity,
+                                                        "user",
+                                                        Toast.LENGTH_SHORT
+                                                    ).show()
                                                     val intent = Intent(
                                                         this@SignInActivity,
                                                         user_home_page_activity::class.java
@@ -64,10 +77,17 @@ class SignInActivity : AppCompatActivity() {
                                                 }
 
                                                 "admin" -> {
+                                                    // Handle the case where the user is an admin
+                                                    Toast.makeText(
+                                                        this@SignInActivity,
+                                                        "Admin",
+                                                        Toast.LENGTH_SHORT
+                                                    ).show()
                                                     val intent = Intent(
                                                         this@SignInActivity,
                                                         home_page_activity::class.java
                                                     )
+                                                    intent.putExtra("userId",userId)
                                                     startActivity(intent)
                                                     finish()
                                                 }
@@ -89,35 +109,21 @@ class SignInActivity : AppCompatActivity() {
                                                 Toast.LENGTH_SHORT
                                             ).show()
                                         }
-                                    } else {
+                                    }
+                                    else {
                                         // Handle the case where the user node doesn't exist in the database
-                                        Toast.makeText(
-                                            this@SignInActivity,
-                                            "User node doesn't exist",
-                                            Toast.LENGTH_SHORT
-                                        ).show()
+                                        Toast.makeText(this@SignInActivity, "hi", Toast.LENGTH_SHORT).show()
                                     }
                                 }
-
-                                override fun onCancelled(databaseError: DatabaseError) {
-                                    // Handle errors here
-                                    Toast.makeText(
-                                        this@SignInActivity,
-                                        "Database Error: ${databaseError.message}",
-                                        Toast.LENGTH_SHORT
-                                    ).show()
+                                override fun onCancelled(error: DatabaseError) {
+                                    // Handle onCancelled. This method is called if the database operation is canceled for some reason.
+                                    Toast.makeText(this@SignInActivity, "Database Error: ${error.message}", Toast.LENGTH_SHORT).show()
                                 }
-                            })
-                        } else {
-                            // Handle the case where signInWithEmailAndPassword is not successful
-                            Toast.makeText(
-                                this@SignInActivity,
-                                "Sign-in failed",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                                })
                         }
                     }
-                } else {
+                }
+                else {
                     Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT)
                         .show()
                 }
